@@ -2,7 +2,7 @@ Lol wut.
 
 This is [cassandra-web](https://github.com/avalanche123/cassandra-web) but as a Docker container. 
 
-It listens on port 80.
+It listens on port 3000.
 
 Environment variables to set:
 
