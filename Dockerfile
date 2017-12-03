@@ -1,14 +1,11 @@
-FROM library/ruby
+FROM library/ruby:2.2-onbuild
 
-ADD . /app
-WORKDIR /app
+ENV PORT=9042 \
+    HOSTS=127.0.0.1
 
 RUN gem install cassandra-web
 
 RUN chmod ugo+x /app/entry.sh
 ENTRYPOINT /app/entry.sh
-
-ENV PORT=9042 \
-    HOSTS=127.0.0.1
 
 EXPOSE 3000
