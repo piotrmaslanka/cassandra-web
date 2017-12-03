@@ -1,3 +1,4 @@
 #!/bin/bash
 
-exec cassandra-web --hosts "$HOSTS" --port "$PORT"
+exec cassandra-web --hosts "$HOSTS" --port "$PORT" "$@"
+
